@@ -11,8 +11,8 @@
     "resolveJsonModule": true,
     "declaration": true,
     "esModuleInterop": true,
-    "jsx": "preserve",
+    "jsx": "react-jsx",
     "jsxImportSource": "solid-js"
   },
-  "include": ["src/", "test/"]
+  "include": ["src/"]
 }
