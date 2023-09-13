@@ -2,6 +2,7 @@ import ts from 'rollup-plugin-typescript2'
 import prettier from 'rollup-plugin-prettier'
 import { terser } from 'rollup-plugin-terser'
 import { version, name } from './package.json'
+import solid from 'vite-plugin-solid'
 
 const formats = ['esm.min']
 
@@ -42,13 +43,13 @@ export default formats.map((format, index) => {
       name: 'solidI18nPro',
     },
     plugins: [
+      solid(),
       ts({
         useTsconfigDeclarationDir: isLast,
         tsconfigOverride: {
           compilerOptions: {
             removeComments: false,
-            declaration: isLast,
-            declarationDir: 'dist',
+            declaration: false,
             module: 'esnext',
             target: 'es5',
             resolveJsonModule: true,

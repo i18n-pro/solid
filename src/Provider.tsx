@@ -22,8 +22,11 @@ export default function Provider(props: ProviderProps) {
     return newState
   }
 
-  const t: Translate = (...args) => {
-    return reactiveT()(...args)
+  const t: Translate = (
+    text: string,
+    ...args: Array<string | number | unknown>
+  ) => {
+    return reactiveT()(text, ...args)
   }
 
   const value = {
