@@ -1,6 +1,6 @@
 import { render, fireEvent } from '@solidjs/testing-library'
 import '@testing-library/jest-dom'
-import { Provider, useI18n } from '../src'
+import { I18nProvider, useI18n } from '../src'
 
 it('No Provider is used', () => {
   function Content() {
@@ -97,7 +97,7 @@ describe('Full Test', () => {
 
     function App() {
       return (
-        <Provider
+        <I18nProvider
           namespace="t-pro-test"
           langs={{
             en: {
@@ -107,7 +107,7 @@ describe('Full Test', () => {
         >
           <div>a</div>
           <Content />
-        </Provider>
+        </I18nProvider>
       )
     }
 
@@ -210,7 +210,7 @@ describe('Full Test', () => {
 
     function NestedApp() {
       return (
-        <Provider
+        <I18nProvider
           namespace="full-test-nested"
           langs={{
             en: {
@@ -220,7 +220,7 @@ describe('Full Test', () => {
         >
           <div>a</div>
           <ChildMemoContent />
-        </Provider>
+        </I18nProvider>
       )
     }
 
@@ -228,7 +228,7 @@ describe('Full Test', () => {
 
     function App() {
       return (
-        <Provider
+        <I18nProvider
           namespace="full-test-out"
           langs={{
             en: {
@@ -238,7 +238,7 @@ describe('Full Test', () => {
         >
           <div>a</div>
           <MemoContent />
-        </Provider>
+        </I18nProvider>
       )
     }
 
