@@ -54,6 +54,8 @@ export default formats.map((format, index) => {
             target: 'es5',
             resolveJsonModule: true,
           },
+          include: ['./src'],
+          exclude: ['./docs', './test'],
         },
       }),
       prettier(),

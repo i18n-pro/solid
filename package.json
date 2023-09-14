@@ -32,7 +32,7 @@
     "lint-msg": "npx commitlint --edit",
     "test": "vitest --ui",
     "coverage": "vitest --coverage",
-    "build": "rimraf dist && tsc --emitDeclarationOnly && rollup -c",
+    "build": "rimraf dist && tsc --emitDeclarationOnly -p ./src/tsconfig.json && rollup -c",
     "publish": "npm run build && npm publish --access=public --registry https://registry.npmjs.org"
   },
   "author": "Eyelly Wu",
