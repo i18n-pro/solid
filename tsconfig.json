@@ -12,7 +12,8 @@
     "declaration": true,
     "esModuleInterop": true,
     "jsx": "react-jsx",
-    "jsxImportSource": "solid-js"
+    "jsxImportSource": "jsx-to-md"
   },
-  "include": ["src/"]
+  "include": ["docs/src", "test/"],
+  "exclude": ["src/"]
 }
