@@ -40,7 +40,7 @@ export default function Top() {
 
   return (
     <div {...props}>
-      <p style={{ 'font-size': 18 }}>
+      <p style={{ fontSize: 18 }}>
         {t('适用于 {0} 的轻量、简单、灵活、自动翻译的国际化工具', 'Solid')}
       </p>
       {renderLanguage()}

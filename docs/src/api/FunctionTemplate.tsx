@@ -1,4 +1,3 @@
-import { For } from 'solid-js'
 import { Break, H2, H3 } from 'jsx-to-md'
 
 export interface FunctionTemplate {
@@ -46,16 +45,14 @@ export default function FunctionTemplate(props: FunctionTemplate) {
               <th>{t('说明')}</th>
             </tr>
             <tr>
-              <For each={Object.entries(propsProp)}>
-                {([key, desc]) => {
-                  return (
-                    <tr>
-                      <td>{key}</td>
-                      <td>{desc}</td>
-                    </tr>
-                  )
-                }}
-              </For>
+              {Object.entries(propsProp).map(([key, desc]) => {
+                return (
+                  <tr>
+                    <td>{key}</td>
+                    <td>{desc}</td>
+                  </tr>
+                )
+              })}
             </tr>
           </table>
         </>
