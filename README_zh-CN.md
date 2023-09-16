@@ -1,7 +1,7 @@
 <div align="center">
   <p style="font-size: 18px;">适用于 Solid 的轻量、简单、灵活、自动翻译的国际化工具</p>
 
-[English](https://github.com/i18n-pro/solid/tree/v0.1.0-alpha.4#readme) | 简体中文
+[English](https://github.com/i18n-pro/solid/tree/v1.0.0#readme) | 简体中文
 
 
 
@@ -11,7 +11,7 @@
 [![github-stars](https://img.shields.io/github/stars/i18n-pro/solid?style=social "github-stars")](https://github.com/i18n-pro/solid/stargazers "github-stars")
 [![last-commit](https://img.shields.io/github/last-commit/i18n-pro/solid/main "last-commit")](https://github.com/i18n-pro/solid/commits/main "last-commit")
 [![github-issues](https://img.shields.io/github/issues-raw/i18n-pro/solid "github-issues")](https://github.com/i18n-pro/solid/issues "github-issues")
-[![codecov](https://codecov.io/gh/i18n-pro/solid/branch/main/graph/badge.svg?token=X2447V6A9H "codecov")](https://codecov.io/gh/i18n-pro/solid "codecov")
+[![codecov](https://codecov.io/gh/i18n-pro/solid/branch/main/graph/badge.svg?token=RMHGQUBVY6 "codecov")](https://codecov.io/gh/i18n-pro/solid "codecov")
 
 ![demo](https://s3.bmp.ovh/imgs/2023/09/15/c8957fd4abda1dfe.gif)
 
@@ -102,9 +102,9 @@ render(
 
 >为了避免不必要的重复文档内容，该库的部分文档是链接 `i18n-pro` 中的内容<br />当前文档中 `i18n-pro` 相关链接是基于 `2.0.0` 版本，如果你使用的非该版本，需查看你所使用版本对应的文档，以免用法不一致
 * 当前库
-   * [快速上手](https://github.com/i18n-pro/solid/blob/v0.1.0-alpha.4/docs/dist/USAGE_zh-CN.md)
-   * [API](https://github.com/i18n-pro/solid/blob/v0.1.0-alpha.4/docs/dist/API_zh-CN.md)
-   * [更新日志](https://github.com/i18n-pro/solid/blob/v0.1.0-alpha.4/docs/dist/CHANGELOG_zh-CN.md)
+   * [快速上手](https://github.com/i18n-pro/solid/blob/v1.0.0/docs/dist/USAGE_zh-CN.md)
+   * [API](https://github.com/i18n-pro/solid/blob/v1.0.0/docs/dist/API_zh-CN.md)
+   * [更新日志](https://github.com/i18n-pro/solid/blob/v1.0.0/docs/dist/CHANGELOG_zh-CN.md)
 * i18n-pro
    * [命令行](https://github.com/i18n-pro/core/blob/v2.0.0/docs/dist/COMMAND_LINE_zh-CN.md)
    * [匹配规则](https://github.com/i18n-pro/core/blob/v2.0.0/docs/dist/MATCH_RULE_zh-CN.md)

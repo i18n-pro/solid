@@ -169,4 +169,4 @@ render(
 
 
 ## 8. Demo
-Real code examples can refer to  [Live Demo](https://github.com/i18n-pro/solid/tree/v0.1.0-alpha.4#live-demo)  in the  `README`  document
+Real code examples can refer to  [Live Demo](https://github.com/i18n-pro/solid/tree/v1.0.0#live-demo)  in the  `README`  document

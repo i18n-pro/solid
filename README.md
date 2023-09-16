@@ -1,7 +1,7 @@
 <div align="center">
   <p style="font-size: 18px;">Lightweight, simple, flexible, automatic translation internationalization tool for Solid</p>
 
-English | [简体中文](https://github.com/i18n-pro/solid/blob/v0.1.0-alpha.4/README_zh-CN.md)
+English | [简体中文](https://github.com/i18n-pro/solid/blob/v1.0.0/README_zh-CN.md)
 
 
 
@@ -11,7 +11,7 @@ English | [简体中文](https://github.com/i18n-pro/solid/blob/v0.1.0-alpha.4/R
 [![github-stars](https://img.shields.io/github/stars/i18n-pro/solid?style=social "github-stars")](https://github.com/i18n-pro/solid/stargazers "github-stars")
 [![last-commit](https://img.shields.io/github/last-commit/i18n-pro/solid/main "last-commit")](https://github.com/i18n-pro/solid/commits/main "last-commit")
 [![github-issues](https://img.shields.io/github/issues-raw/i18n-pro/solid "github-issues")](https://github.com/i18n-pro/solid/issues "github-issues")
-[![codecov](https://codecov.io/gh/i18n-pro/solid/branch/main/graph/badge.svg?token=X2447V6A9H "codecov")](https://codecov.io/gh/i18n-pro/solid "codecov")
+[![codecov](https://codecov.io/gh/i18n-pro/solid/branch/main/graph/badge.svg?token=RMHGQUBVY6 "codecov")](https://codecov.io/gh/i18n-pro/solid "codecov")
 
 ![demo](https://s3.bmp.ovh/imgs/2023/09/15/c8957fd4abda1dfe.gif)
 
@@ -102,9 +102,9 @@ render(
 
 >To avoid unnecessary duplicate document content, some of the documents in this library are linked to the content in  `i18n-pro` <br />The  `i18n-pro`  related link in the current document is based on the  `2.0.0`  version. If you are using a different version, you need to check the document corresponding to the version you are using to avoid inconsistent usage
 * Current Library
-   * [Quick Start](https://github.com/i18n-pro/solid/blob/v0.1.0-alpha.4/docs/dist/USAGE.md)
-   * [API](https://github.com/i18n-pro/solid/blob/v0.1.0-alpha.4/docs/dist/API.md)
-   * [Changelog](https://github.com/i18n-pro/solid/blob/v0.1.0-alpha.4/docs/dist/CHANGELOG.md)
+   * [Quick Start](https://github.com/i18n-pro/solid/blob/v1.0.0/docs/dist/USAGE.md)
+   * [API](https://github.com/i18n-pro/solid/blob/v1.0.0/docs/dist/API.md)
+   * [Changelog](https://github.com/i18n-pro/solid/blob/v1.0.0/docs/dist/CHANGELOG.md)
 * i18n-pro
    * [Command Line](https://github.com/i18n-pro/core/blob/v2.0.0/docs/dist/COMMAND_LINE.md)
    * [Matching Rules](https://github.com/i18n-pro/core/blob/v2.0.0/docs/dist/MATCH_RULE.md)

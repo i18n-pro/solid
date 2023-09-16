@@ -99,7 +99,7 @@ const images = [
   {
     title: 'codecov',
     alt: 'codecov',
-    src: `https://codecov.io/gh/${githubKey}/branch/main/graph/badge.svg?token=X2447V6A9H`,
+    src: `https://codecov.io/gh/${githubKey}/branch/main/graph/badge.svg?token=RMHGQUBVY6`,
   },
 ] as const
 
