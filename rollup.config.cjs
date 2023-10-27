@@ -1,8 +1,8 @@
-import ts from 'rollup-plugin-typescript2'
-import prettier from 'rollup-plugin-prettier'
-import { terser } from 'rollup-plugin-terser'
-import { version, name } from './package.json'
-import solid from 'vite-plugin-solid'
+const ts = require('rollup-plugin-typescript2')
+const prettier = require('rollup-plugin-prettier')
+const { terser } = require('rollup-plugin-terser')
+const { version, name } = require('./package.json')
+const solid = require('vite-plugin-solid')
 
 const formats = ['esm.min']
 
@@ -18,7 +18,7 @@ const banner = `/*
 
 const minBanner = `// ${name} v${version} ${new Date().toLocaleString()} ${copyright}`
 
-export default formats.map((format, index) => {
+module.exports = formats.map((format, index) => {
   const isLast = index === formats.length - 1
   let pluginsExtra = []
 
