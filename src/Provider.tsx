@@ -1,14 +1,9 @@
-import { createSignal } from 'solid-js'
-import type { JSXElement } from 'solid-js'
+import { createSignal, type ParentProps } from 'solid-js'
 import { initI18n, Translate } from 'i18n-pro'
 import type { I18nState, SetI18n } from 'i18n-pro'
 import { InnerProvider } from './context'
 
-export interface ProviderProps extends I18nState {
-  children: JSXElement
-}
-
-export default function Provider(props: ProviderProps) {
+export default function Provider(props: ParentProps<I18nState>) {
   // eslint-disable-next-line solid/reactivity, @typescript-eslint/no-unused-vars
   const { children, ...i18nStateProp } = props
   const { t: originT, setI18n: originSetI18n } = initI18n(i18nStateProp)
