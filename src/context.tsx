@@ -3,9 +3,9 @@ import { createContext, createSignal, useContext } from 'solid-js'
 
 const DEFAULT_NAMESPACE = 'unknown'
 
-const [i18nState] = createSignal({
+const [i18nState] = createSignal<I18nState>({
   namespace: DEFAULT_NAMESPACE,
-} as I18nState)
+})
 
 const I18nContext = createContext({
   t: (t: string) => t,
