@@ -1,12 +1,12 @@
 import { createContext, useContext, createSignal } from 'solid-js'
 import { Translate, SetI18n, I18nState } from 'i18n-pro'
 
-let count = 0
+let warned = false
 
 const t: Translate = (t) => {
-  if (count === 0) {
+  if (!warned) {
     console.warn('useI18n should be wrapped by Provider')
-    count++
+    warned = true
   }
   return t
 }
