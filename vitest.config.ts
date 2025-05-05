@@ -6,8 +6,17 @@ export default defineConfig({
   test: {
     globals: true,
     coverage: {
-      provider: 'istanbul',
-      reporter: ['json', 'html', 'text-summary', 'text'],
+      ignoreEmptyLines: true,
+      thresholds: {
+        branches: 10,
+        functions: 10,
+        lines: 10,
+        statements: 10,
+      },
+      reporter: ['text', 'html', 'json', 'json-summary'],
+      // Coverage reports even if tests are failing
+      reportOnFailure: true,
+      include: ['src/context.tsx', 'src/Provider.tsx'],
     },
     environment: 'jsdom',
   },

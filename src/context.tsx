@@ -1,34 +1,27 @@
 import { createContext, useContext, createSignal } from 'solid-js'
-import { Translate, SetI18n, I18nState } from 'i18n-pro'
+import { I18nState } from 'i18n-pro'
 
-let count = 0
+const DEFAULT_NAMESPACE = 'unknown'
 
-const t: Translate = (t) => {
-  if (count === 0) {
-    console.warn('useI18n should be wrapped by Provider')
-    count++
-  }
-  return t
-}
+const [i18nState] = createSignal<I18nState>({
+  namespace: DEFAULT_NAMESPACE,
+})
 
-const setI18n: SetI18n = (res) => {
-  return { ...res, namespace: 'unknown' }
-}
-
-const [i18nState] = createSignal({
-  namespace: 'unknown',
-} as I18nState)
-
-const defaultContext = {
-  t,
-  setI18n,
+const I18nContext = createContext({
+  t: (t: string) => t,
+  setI18n: (res: Pick<I18nState, 'locale' | 'langs'>) => ({
+    namespace: DEFAULT_NAMESPACE,
+    ...res,
+  }),
   i18nState,
-}
+})
 
-const i18nContext = createContext(defaultContext)
-
-export const InnerProvider = i18nContext.Provider
+export const InnerProvider = I18nContext.Provider
 
 export function useI18n() {
-  return useContext(i18nContext)
+  const context = useContext(I18nContext)
+  if (!context) {
+    throw new Error('useI18n: cannot find a I18nContext')
+  }
+  return context
 }
