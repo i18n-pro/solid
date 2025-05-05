@@ -1,7 +1,7 @@
 
 # Quick Start
 
->To avoid unnecessary duplicate document content, some of the documents in this library are linked to the content in  `i18n-pro` <br />The  `i18n-pro`  related link in the current document is based on the  `2.1.0`  version. If you are using a different version, you need to check the document corresponding to the version you are using to avoid inconsistent usage
+>To avoid unnecessary duplicate document content, some of the documents in this library are linked to the content in  `i18n-pro` <br />The  `i18n-pro`  related link in the current document is based on the  `2.1.1`  version. If you are using a different version, you need to check the document corresponding to the version you are using to avoid inconsistent usage
 <details >
   <summary>Table of Contents</summary>
 
@@ -26,7 +26,7 @@ npm i @i18n-pro/solid
 yarn add @i18n-pro/solid
 # or
 # Note: To prevent issues where the i18n command cannot be used due to ghost dependencies, it is essential to install i18n-pro when using pnpm
-pnpm i i18n-pro @i18n-pro/solid
+pnpm i i18n-pro@2 @i18n-pro/solid
 ```
 
 ## 2. Access API
@@ -68,13 +68,13 @@ render(
 
 
 ## 3. Initialize Command Line Configuration File
-[Please refer to](https://github.com/i18n-pro/core/blob/v2.1.0/docs/dist/USAGE.md#3-initialize-command-line-configuration-file)
+[Please refer to](https://github.com/i18n-pro/core/blob/v2.1.1/docs/dist/USAGE.md#3-initialize-command-line-configuration-file)
 
 ## 4. Adjust  `i18nrc.js`  Configuration
-[Please refer to](https://github.com/i18n-pro/core/blob/v2.1.0/docs/dist/USAGE.md#4-adjust--i18nrcjs--configuration)
+[Please refer to](https://github.com/i18n-pro/core/blob/v2.1.1/docs/dist/USAGE.md#4-adjust--i18nrcjs--configuration)
 
 ## 5. Execute Translation Command
-[Please refer to](https://github.com/i18n-pro/core/blob/v2.1.0/docs/dist/USAGE.md#5-execute-translation-command)
+[Please refer to](https://github.com/i18n-pro/core/blob/v2.1.1/docs/dist/USAGE.md#5-execute-translation-command)
 
 ## 6. Importing Language Pack
 The language pack already exists, so it needs to be applied to the project
@@ -169,4 +169,4 @@ render(
 
 
 ## 8. Demo
-Real code examples can refer to  [Live Demo](https://github.com/i18n-pro/solid/tree/v1.0.1#live-demo)  in the  `README`  document
+Real code examples can refer to  [Live Demo](https://github.com/i18n-pro/solid/tree/v1.0.2#live-demo)  in the  `README`  document

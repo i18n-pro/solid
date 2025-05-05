@@ -16,8 +16,6 @@ import {
   getTranslationText,
   packageName,
   getI18nProDocHref,
-  getCompositionAPI,
-  getOptionsAPI,
 } from '../utils'
 import SpecialStatement from '../components/SpecialStatement'
 
@@ -40,7 +38,7 @@ yarn add ${showPackageName}
 # ${t(
           '注意：为了避免幽灵依赖导致 i18n 命令不能使用的问题，使用 pnpm 必须要安装 i18n-pro',
         )}
-pnpm i i18n-pro ${showPackageName}`}
+pnpm i i18n-pro@2 ${showPackageName}`}
       />
     </>
   )

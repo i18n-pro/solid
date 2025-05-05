@@ -140,9 +140,9 @@ function requestCache<T>(key: string, request: () => Promise<T>): Promise<T> {
 }
 
 export async function getI18nProFileImpl(path?: string): Promise<string> {
-  // const base = 'https://jsd.linux.sh.cn/gh/i18n-pro/core@main'
-  const base = 'https://fastly.jsdelivr.net/gh/i18n-pro/core@main'
-  // const base = 'https://raw.githubusercontent.com/i18n-pro/core/main'
+  // const base = 'https://jsd.linux.sh.cn/gh/i18n-pro/core@2'
+  const base = 'https://fastly.jsdelivr.net/gh/i18n-pro/core@2'
+  // const base = 'https://raw.githubusercontent.com/i18n-pro/core/2'
 
   let res = t(`获取文件${path}错误`)
   try {
