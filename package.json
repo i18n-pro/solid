@@ -41,8 +41,8 @@
   "author": "Eyelly Wu",
   "license": "MIT",
   "devDependencies": {
-    "@commitlint/cli": "^17.4.3",
-    "@commitlint/config-conventional": "^17.4.3",
+    "@commitlint/cli": "^17.4.4",
+    "@commitlint/config-conventional": "^17.4.4",
     "@eyelly/prettier-config": "^1.0.0",
     "@solidjs/testing-library": "^0.8.10",
     "@testing-library/jest-dom": "^6.6.3",
@@ -79,7 +79,7 @@
   },
   "dependencies": {
     "i18n-pro": "^2.0.0",
-    "solid-js": "^1.0.0"
+    "solid-js": "^1.0.7"
   },
   "lint-staged": {
     "*.{json,ts,tsx,js}": "eslint --fix -f table"
