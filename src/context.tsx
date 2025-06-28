@@ -3,13 +3,11 @@ import { Translate, SetI18n, I18nState } from 'i18n-pro'
 
 const namespace = 'unknown'
 
-const t: Translate = (t) => {
+const t = ((t) => {
   return t
-}
+}) as Translate
 
-const setI18n: SetI18n = (res) => {
-  return { ...res, namespace }
-}
+const setI18n: SetI18n = (res) => Promise.resolve({ ...res, namespace })
 
 const [i18nState] = createSignal<I18nState>({
   namespace,
