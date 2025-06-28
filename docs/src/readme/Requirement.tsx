@@ -8,7 +8,7 @@ export default function Requirement() {
         items={[
           'U',
           'solid-js >= **1.0.0**',
-          'i18n-pro >= **2.0.0** < **3.0.0**',
+          'i18n-pro >= **3.0.0** < **4.0.0**',
         ]}
       />
     </>

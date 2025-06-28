@@ -52,7 +52,6 @@
   "真实代码示例可参考{0}文档中的{1}": "Real code examples can refer to {1} in the {0} document",
   "注意：为了避免幽灵依赖导致 i18n 命令不能使用的问题，使用 pnpm 必须要安装 i18n-pro": "Note: To prevent issues where the i18n command cannot be used due to ghost dependencies, it is essential to install i18n-pro when using pnpm",
   "该库是基于{0}结合{1}的{2}特性来实现的": "This library is implemented based on {0} combined with {1}'s {2} feature",
-  "适用于 {0} 的轻量、简单、灵活、自动翻译的国际化工具": "Lightweight, simple, flexible, automatic translation internationalization tool for {0}",
   "初始化国际化状态并返回其插件函数": "Initialize internationalization state and return its plugin function",
   "新增{0}和{1}基础实现": "Add basic implementation for {0} and {1}",
   "组合式 API": "Composition API",
@@ -63,5 +62,7 @@
   "需要国际化的内容": "Content that requires internationalization",
   "注意：由于{0}是一个响应式的状态，使用时需要{1}这样来使用": "Note: Since {0} is a reactive state, it needs to be accessed as {1} when used",
   "修复在{0}中未配置{1}属性会导致{2}编译报错": "Fixed the absence of the {1} property configuration in {0} which was causing a compilation error in {2}",
-  "修复在{0}中不能正常使用的问题": "Fixed the issue that it could not be used normally in {0}"
+  "修复在{0}中不能正常使用的问题": "Fixed the issue that it could not be used normally in {0}",
+  "开箱即用的轻量级 Solid 国际化自动翻译解决方案": "An out-of-the-box, lightweight i18n auto-translation solution for Solid",
+  "适配{0}": "Adapt {0}"
 }

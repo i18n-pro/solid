@@ -2,12 +2,15 @@
 # Changelog
 
 
-English | [简体中文](https://github.com/i18n-pro/solid/blob/v1.0.2/docs/dist/CHANGELOG_zh-CN.md)
+English | [简体中文](https://github.com/i18n-pro/solid/blob/v2.0.0-alpha.0/docs/dist/CHANGELOG_zh-CN.md)
 
 
 <details >
   <summary>Table of Contents</summary>
 
+  &emsp;&emsp;[[2.0.0] - 2025-06-xx](#200---2025-06-xx)<br/>
+  &emsp;&emsp;&emsp;&emsp;[API](#200-api)<br/>
+  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;[Changed](#200-api-changed)<br/>
   &emsp;&emsp;[[1.0.2] - 2025-05-05](#102---2025-05-05)<br/>
   &emsp;&emsp;&emsp;&emsp;[API](#102-api)<br/>
   &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;[Fixed](#102-api-fixed)<br/>
@@ -20,13 +23,22 @@ English | [简体中文](https://github.com/i18n-pro/solid/blob/v1.0.2/docs/dist
 
 </details>
 
+## [2.0.0] - 2025-06-xx
+
+<h3 id="200-api">API</h3>
+
+<h4 id="200-api-changed">Changed</h4>
+
+* Adapt  `i18n-pro@3` 
+
+
 ## [1.0.2] - 2025-05-05
 
 <h3 id="102-api">API</h3>
 
 <h4 id="102-api-fixed">Fixed</h4>
 
-* Fixed the issue that it could not be used normally in  `@solid-js/router`  [#3](https://github.com/i18n-pro/solid/issues/3) by @[onx2](https://github.com/onx2)
+* Fixed the issue that it could not be used normally in  `@solid-js/router`  [#3](https://github.com/i18n-pro/solid/issues/3) by [@onx2](https://github.com/onx2)
 
 
 ## [1.0.1] - 2023-10-27

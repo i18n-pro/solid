@@ -1,8 +1,8 @@
 {
   "name": "@i18n-pro/solid",
-  "version": "1.0.2",
+  "version": "2.0.0-alpha.0",
   "type": "module",
-  "description": "Lightweight, simple, flexible, automatic translation internationalization tool for Solid（适用于 Solid 的轻量、简单、灵活、自动翻译的国际化工具）",
+  "description": "An out-of-the-box, lightweight i18n auto-translation solution for Solid",
   "keywords": [
     "solid",
     "solidjs",
@@ -36,7 +36,7 @@
     "build": "rimraf dist && tsc --emitDeclarationOnly -p ./src/tsconfig.json && rollup -c",
     "publish": "npm run build && npm publish --access=public --registry https://registry.npmjs.org",
     "docs": "jtm run",
-    "docs-translate": "i18n t -P docs/src"
+    "docs-i18n": "i18n t -P docs/src"
   },
   "author": "Eyelly Wu",
   "license": "MIT",
