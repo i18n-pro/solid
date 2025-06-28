@@ -9,19 +9,26 @@ export default function Provider(props: ParentProps<I18nState>) {
   const [i18nState, setI18nState] = createSignal(i18nStateProp)
   const [reactiveT, setReactiveT] = createSignal(originT)
 
-  const setI18n: SetI18n = (args) => {
-    const newState = originSetI18n(args)
-    setReactiveT(() => originT.bind(null))
+  const setI18n: SetI18n = async (args) => {
+    const newState = await originSetI18n(args)
+    setReactiveT(() => originT.withLocale())
     setI18nState(newState)
     return newState
   }
 
-  const t: Translate = (
-    text: string,
-    ...args: Array<string | number | unknown>
-  ) => {
+  // eslint-disable-next-line solid/reactivity
+  const t = ((text: string, ...args: Array<string | number | unknown>) => {
     return reactiveT()(text, ...args)
-  }
+  }) as Translate
+
+  Object.defineProperties(t, {
+    t: {
+      get: () => reactiveT().t,
+    },
+    withLocale: {
+      get: () => reactiveT().withLocale,
+    },
+  })
 
   const value = {
     t,
