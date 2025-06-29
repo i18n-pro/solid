@@ -40,17 +40,17 @@
 # 特性
 
 * **轻量**：[![bundlesize](https://img.shields.io/bundlephobia/minzip/i18n-pro?color=brightgreen&style=plastic "i18n-pro-bundlesize")](https://bundlephobia.com/package/i18n-pro "i18n-pro-bundlesize") + [![bundlesize](https://img.shields.io/bundlephobia/minzip/@i18n-pro/solid?color=brightgreen&style=plastic "bundlesize")](https://bundlephobia.com/package/@i18n-pro/solid "bundlesize")
-* 以下特性继承于 [i18n-pro](https://github.com/i18n-pro/core "i18n-pro") 
+* 以下特性继承于 [i18n-pro](https://github.com/i18n-pro/core "i18n-pro")
    * **简单**
    * **灵活**
    * **自动翻译**
    * **keyless**
-
+ 
 
 # Live Demo
 
-* [Open in CodeSandbox](https://codesandbox.io/p/github/i18n-pro/solid-demo/main?file=README_zh-CN.md)
-* [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz_small.svg "Open in StackBlitz")](https://stackblitz.com/github/i18n-pro/solid-demo?file=README_zh-CN.md)
+* [Open in CodeSandbox](https://codesandbox.io/p/github/i18n-pro/solid-demo/v2?file=README_zh-CN.md)
+* [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz_small.svg "Open in StackBlitz")](https://stackblitz.com/github/i18n-pro/solid-demo/tree/v2?file=README_zh-CN.md)
 
 
 # 原理

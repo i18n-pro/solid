@@ -49,8 +49,8 @@ To make internationalization easy and enjoyable 😄💪🏻
 
 # Live Demo
 
-* [Open in CodeSandbox](https://codesandbox.io/p/github/i18n-pro/solid-demo/main?file=README.md)
-* [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz_small.svg "Open in StackBlitz")](https://stackblitz.com/github/i18n-pro/solid-demo?file=README.md)
+* [Open in CodeSandbox](https://codesandbox.io/p/github/i18n-pro/solid-demo/v2?file=README.md)
+* [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz_small.svg "Open in StackBlitz")](https://stackblitz.com/github/i18n-pro/solid-demo/tree/v2?file=README.md)
 
 
 # Principle
