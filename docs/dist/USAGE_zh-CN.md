@@ -169,4 +169,4 @@ render(
 
 
 ## 8. Demo
-真实代码示例可参考 `README` 文档中的 [Live Demo](https://github.com/i18n-pro/solid/blob/v2.0.0-alpha.0/README_zh-CN.md#live-demo) 
+真实代码示例可参考 `README` 文档中的 [Live Demo](https://github.com/i18n-pro/solid/blob/v2.0.0-alpha.1/README_zh-CN.md#live-demo) 

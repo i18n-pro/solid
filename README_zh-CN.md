@@ -1,7 +1,7 @@
 <div align="center">
   <p style="font-size: 18px;">开箱即用的轻量级 Solid 国际化自动翻译解决方案</p>
 
-[English](https://github.com/i18n-pro/solid/tree/v2.0.0-alpha.0#readme) | 简体中文
+[English](https://github.com/i18n-pro/solid/tree/v2.0.0-alpha.1#readme) | 简体中文
 
 
 
@@ -40,12 +40,12 @@
 # 特性
 
 * **轻量**：[![bundlesize](https://img.shields.io/bundlephobia/minzip/i18n-pro?color=brightgreen&style=plastic "i18n-pro-bundlesize")](https://bundlephobia.com/package/i18n-pro "i18n-pro-bundlesize") + [![bundlesize](https://img.shields.io/bundlephobia/minzip/@i18n-pro/solid?color=brightgreen&style=plastic "bundlesize")](https://bundlephobia.com/package/@i18n-pro/solid "bundlesize")
-* 以下特性继承于 [i18n-pro](https://github.com/i18n-pro/core "i18n-pro")
+* 以下特性继承于 [i18n-pro](https://github.com/i18n-pro/core "i18n-pro") 
    * **简单**
    * **灵活**
    * **自动翻译**
    * **keyless**
- 
+
 
 # Live Demo
 
@@ -102,9 +102,9 @@ render(
 
 >为了避免不必要的重复文档内容，该库的部分文档是链接 `i18n-pro` 中的内容<br />当前文档中 `i18n-pro` 相关链接是基于 `3.0.0-alpha.1` 版本，如果你使用的非该版本，需查看你所使用版本对应的文档，以免用法不一致
 * 当前库
-   * [快速上手](https://github.com/i18n-pro/solid/blob/v2.0.0-alpha.0/docs/dist/USAGE_zh-CN.md)
-   * [API](https://github.com/i18n-pro/solid/blob/v2.0.0-alpha.0/docs/dist/API_zh-CN.md)
-   * [更新日志](https://github.com/i18n-pro/solid/blob/v2.0.0-alpha.0/docs/dist/CHANGELOG_zh-CN.md)
+   * [快速上手](https://github.com/i18n-pro/solid/blob/v2.0.0-alpha.1/docs/dist/USAGE_zh-CN.md)
+   * [API](https://github.com/i18n-pro/solid/blob/v2.0.0-alpha.1/docs/dist/API_zh-CN.md)
+   * [更新日志](https://github.com/i18n-pro/solid/blob/v2.0.0-alpha.1/docs/dist/CHANGELOG_zh-CN.md)
 * i18n-pro
    * [命令行](https://github.com/i18n-pro/core/blob/v3.0.0-alpha.1/docs/dist/COMMAND_LINE_zh-CN.md)
    * [匹配规则](https://github.com/i18n-pro/core/blob/v3.0.0-alpha.1/docs/dist/MATCH_RULE_zh-CN.md)
