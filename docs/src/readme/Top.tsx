@@ -74,7 +74,7 @@ export default function Top() {
       <Break />
       <Image
         alt="demo"
-        src="https://s3.bmp.ovh/imgs/2023/09/15/c8957fd4abda1dfe.gif"
+        src="https://s3.bmp.ovh/imgs/2025/07/11/9457be226e5ab9a7.gif"
       />
       <Break />
     </div>
