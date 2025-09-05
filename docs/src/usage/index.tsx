@@ -7,6 +7,7 @@ import {
   Link,
   render,
   TableOfContents,
+  BlockQuote,
 } from 'jsx-to-md'
 import I18nProWrapper from '../components/I18nProWrapper'
 import { Package } from '../types'
@@ -16,6 +17,7 @@ import {
   getTranslationText,
   packageName,
   getI18nProDocHref,
+  getText,
 } from '../utils'
 import SpecialStatement from '../components/SpecialStatement'
 
@@ -38,7 +40,7 @@ yarn add ${showPackageName}
 # ${t(
           '注意：为了避免幽灵依赖导致 i18n 命令不能使用的问题，使用 pnpm 必须要安装 i18n-pro',
         )}
-pnpm i i18n-pro@2 ${showPackageName}`}
+pnpm i i18n-pro ${showPackageName}`}
       />
     </>
   )
@@ -47,7 +49,7 @@ pnpm i i18n-pro@2 ${showPackageName}`}
 function LinkApi() {
   return (
     <>
-      <H2>{`2. ${t('接入API')}`}</H2>
+      <H2>{`2. ${t('接入 API')}`}</H2>
       <H3>{t('配置初始状态')}</H3>
       <CodeBlock
         code={`
@@ -65,10 +67,11 @@ export default {
           ' `I18nProvider` ',
           ' `useI18n` ',
           ' `t` ',
-          getTranslationText(),
+          getTranslationText(true),
         )}
       </H3>
       <CodeBlock
+        langType="jsx"
         code={`
 // App.tsx
 import { render } from 'solid-js/web'
@@ -78,7 +81,14 @@ import i18nState from './i18n.ts'
 function App() {
   const { t } = useI18n()
 
-  return <>{t('hello world')}</>
+  return (
+    <>
+      {/** ${t('文案即 key')} */}
+      <div>{t('hello world')}</div>
+      {/** ${t('自定义 key')} */}
+      <div>{t.t('custom-key', 'hello world')}</div>
+    </>
+  )
 }
 
 render(
@@ -97,18 +107,13 @@ render(
 
 function InitConfig(props: I18nProProps) {
   const { i18nProPkg } = props
+  const title = `3. ${t('初始化命令行配置文件')}`
 
   return (
     <>
       <Break />
-      <H2>{`3. ${t('初始化命令行配置文件')}`}</H2>
-      <Link
-        href={getI18nProDocHref(
-          i18nProPkg,
-          'USAGE',
-          `3. ${t('初始化命令行配置文件')}`,
-        )}
-      >
+      <H2>{title}</H2>
+      <Link href={getI18nProDocHref(i18nProPkg, 'USAGE', title)}>
         {t('请参考')}
       </Link>
     </>
@@ -118,17 +123,14 @@ function InitConfig(props: I18nProProps) {
 function ModifyConfig(props: I18nProProps) {
   const { i18nProPkg } = props
 
+  const configName = ' `i18nrc.ts` '
+  const title = `4. ${t('调整{0}配置', configName)}`
+
   return (
     <>
       <Break />
-      <H2>{`4. ${t('调整{0}配置', ' `i18nrc.js` ')}`}</H2>
-      <Link
-        href={getI18nProDocHref(
-          i18nProPkg,
-          'USAGE',
-          `4. ${t('调整{0}配置', ' `i18nrc.js` ')}`,
-        )}
-      >
+      <H2>{title}</H2>
+      <Link href={getI18nProDocHref(i18nProPkg, 'USAGE', title)}>
         {t('请参考')}
       </Link>
     </>
@@ -136,31 +138,39 @@ function ModifyConfig(props: I18nProProps) {
 }
 
 function ExecuteTranslateCommand(props: I18nProProps) {
+  const title = `5. ${t('执行翻译命令')}`
+
   return (
     <>
       <Break />
-      <H2>{`5. ${t('执行翻译命令')}`}</H2>
-      <Link
-        href={getI18nProDocHref(
-          props.i18nProPkg,
-          'USAGE',
-          `5. ${t('执行翻译命令')}`,
-        )}
-      >
+      <H2>{title}</H2>
+      <Link href={getI18nProDocHref(props.i18nProPkg, 'USAGE', title)}>
         {t('请参考')}
       </Link>
     </>
   )
 }
 
-function ImportLangs() {
+function ImportLangs(props: I18nProProps) {
+  const title = `6. ${t('引入语言包')}`
+
   return (
     <>
       <Break />
-      <H2>{`6. ${t('引入语言包')}`}</H2>
+      <H2>{title}</H2>
       {t('语言包已经有了，就需要应用到项目中了')}
       <Break />
-      <Break />
+      <BlockQuote>{`${t(
+        '当前支持{0}种引入语言包的方式，本文档只介绍{1}的方式，更多方式{2}',
+        getText('3'),
+        getText(t('静态导入')),
+        render(
+          <Link href={getI18nProDocHref(props.i18nProPkg, 'USAGE', title)}>
+            {t('请参考')}
+          </Link>,
+        ),
+      )}`}</BlockQuote>
+      <Break lines={2} />
       {t(
         '如果生成的语言包是每个语言单独文件形式{0}，操作如下：',
         "（`output.langType == 'multiple'`）",
@@ -202,11 +212,11 @@ export default {
 `}
       />
       {t(
-        '至此，项目已经完全接入了国际化，上面{0}指定为目标语言中任意一个，在页面上就能看到翻译好的内容了。后续如果项目中有新增的{1}（需要用{2}函数包裹哟），就仅仅需要再次执行翻译命令{3}生成最新的语言包就可以了',
-        ' `locale` ',
+        '至此，国际化功能已集成完毕。只需将 {0} 设置为目标语言，即可在页面上展示对应的翻译内容。后续如有新增{1}（需用 {2} 函数包裹），只需重新执行 {3} 命令生成最新语言包，即可确保所有新增内容均被翻译',
+        getText('locale'),
         getTranslationText(),
-        ' `t` ',
-        ' `npx i18n t` ',
+        getText('t'),
+        getText('npx i18n t'),
       )}
     </>
   )
@@ -242,7 +252,7 @@ function SwitchLang() {
 +     >
 +       <option value="zh">简体中文</option>
 +       <option value="en">English</option>
-+       <option value="jp">日本語</option>
++       <option value="ja">日本語</option>
 +     </select>
 +   )
 + }
@@ -257,13 +267,15 @@ import i18nState from './i18n.ts'
 function App() {
   const { t } = useI18n()
 
--  return <>{t('hello world')}</>
-+  return (
-+  <>
-+    {t('hello world')}
-+    <SwitchLang />
-+  </>
-+)
+  return (
+    <>
+      {/** ${t('文案即 key')} */}
+      <div>{t('hello world')}</div>
+      {/** ${t('自定义 key')} */}
+      <div>{t.t('custom-key', 'hello world')}</div>
++     <SwitchLang />
+    </>
+  )
 }
 
 render(
@@ -312,7 +324,7 @@ export default function Usage(props) {
             <InitConfig i18nProPkg={i18nProPkg} />
             <ModifyConfig i18nProPkg={i18nProPkg} />
             <ExecuteTranslateCommand i18nProPkg={i18nProPkg} />
-            <ImportLangs />
+            <ImportLangs i18nProPkg={i18nProPkg} />
             <SwitchLang />
             <Demo />
           </>
