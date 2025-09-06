@@ -78,7 +78,7 @@
     "solid-js": ">=1.0.0"
   },
   "dependencies": {
-    "i18n-pro": "3.0.0-alpha.2",
+    "i18n-pro": "3.0.0",
     "solid-js": "^1.0.7"
   },
   "lint-staged": {
